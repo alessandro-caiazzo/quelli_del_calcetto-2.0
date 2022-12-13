@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /* background-image: url(../../assets/img/stadium.jpg);
+  background-repeat: no-repeat;
+  background-size: auto; */
+  background-color: #151515;
+
+  font-family: 'Zen Dots', cursive;
+}
+
+#nav-container{
+  display: flex;
+  justify-content: center;
+  width: 99.5%;
+  margin: 5px 0 20px 5px;
+  border-radius: 8px;
+}
+
+#nav-container a{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  color: #d9d9d9;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: 250ms;
+  font-size: 13px;
+}
+
+.icon-name{
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+#nav-container a:hover{
+  /* color: #292e49; */
+  color: orange;
+  border-bottom: orange solid 2px;
+}
+
+#nav-container a:active{
+  color: orange;
+  /* non  funziona */
+}
+
+.logo{
+  height: 60px;
+  margin-right: 10px;
+  margin-left: 50px;
+}
+
+.logo_heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: orange;
+  text-decoration: underline;
+}
+
+
+
+/* ///////////////          pitch           //////////////////////*/
+
+
+.pitch{
+  display: flex;
+  justify-content: center;
+
+  /* background: rgb(0,153,0);  green standard pitch
+  background: radial-gradient(circle, rgba(0,153,0,1) 0%, rgba(42,217,41,1) 100%); */
+
+  background: rgb(255,165,0);
+  background: linear-gradient(191deg, rgba(255,165,0,1) 0%, rgba(204,140,23,1) 44%, rgba(184,1,1,1) 100%);
+
+  width: 900px;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.top_line{
+  width: 850px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 7%;
+
+}
+
+.bottom_line{
+  width: 850px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 93%;
+}
+
+.right_line{
+  width: 4px;
+  height: 434px;
+  background-color: white;
+  position: absolute;
+  top: 7%;
+  left: 97%;
+}
+
+.left_line{
+  width: 4px;
+  height: 434px;
+  background-color: white;
+  position: absolute;
+  top: 7%;
+  right: 97%;
+}
+
+.central_line{
+  width: 4px;
+  height: 434px;
+  background-color: white;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+}
+
+.central_dot{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  top: 48.5%;
+  left: 48.5%;
+  border-radius: 50%;
+}
+
+.central_circle{
+  width: 180px;
+  height: 180px;
+  background-color: white;
+  position: absolute;
+  top: 33.5%;
+  left: 40.5%;
+  border-radius: 50%;
+  background: transparent;
+  border: white 4px solid;
+}
+
+/* //////////////       porte             ///////////////*/
+
+.top_right_area{
+  width: 100px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 23%;
+  left: 86%;
+}
+
+.bottom_right_area{
+  width: 100px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 76%;
+  left: 86%;
+}
+
+.vertical_right_area{
+  width: 4px;
+  height: 265px;
+  background-color: white;
+  position: absolute;
+  top: 23%;
+  left: 86%;
+}
+
+.top_left_area{
+  width: 100px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 23%;
+  left: 3%;
+}
+
+.bottom_left_area{
+  width: 100px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 75.3%;
+  left: 3%;
+}
+
+.vertical_left_area{
+  width: 4px;
+  height: 265px;
+  background-color: white;
+  position: absolute;
+  top: 23%;
+  left: 14%;
+}
+
+
+.dragable_1{
+  position: absolute;
+  left: 0;
+  top: 0; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dragable_2{
+  position: absolute;
+  left: 10%;
+  top: 0; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dragable_3{
+  position: absolute;
+  left: 20%;
+  top: 0; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dragable_4{
+  position: absolute;
+  left: 30%;
+  top: 0; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dragable_5{
+  position: absolute;
+  left: 40%;
+  top: 0; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dragable_6{
+  position: absolute;
+  right: 40%;
+  top: 0; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dragable_7{
+  position: absolute;
+  right: 30%;
+  top: 0; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dragable_8{
+  position: absolute;
+  right: 20%;
+  top: 0; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dragable_9{
+  position: absolute;
+  right: 10%;
+  top: 0; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dragable_10{
+  position: absolute;
+  right: 0;
+  top: 0; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+
+/* //////////           media querys        ///////////////// */
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  #nav-container{
+    width: 100% ;
+    align-items: center;
+    margin: 0px ;
+    border-radius: 0px ;
+  }
+
+  #nav-container a{
+    font-size: 11px ;
+  }
+
+  #nav-container a span{
+    font-size: 22px;
+  }
+
+  .logo{
+    height: 50px;
+    margin-left: 0px ;
+  }
+
+
+  .logo_heading h5{
+    display: none ;
+  }
+
+
+
+  .pitch{
+    width: 296px ;
+    height: 550px ;
+    margin-top: 5px ;
+    background-image: url(../../assets/img/campo_calcio.png) ;
+    background-position: center ;
+    background-size: contain ;
+  }
+
+  .top_line{
+    display: none;
+
+  }
+
+  .bottom_line{
+    display: none;
+  }
+
+  .right_line{
+    display: none;
+  }
+
+  .left_line{
+  display: none;
+  }
+
+  .central_line{
+    display: none;
+  }
+
+  .central_dot{
+  display: none;
+  }
+
+  .central_circle{
+  display: none;
+  }
+
+  /* //////////////       porte             ///////////////*/
+
+  .top_right_area{
+  display: none;
+  }
+
+  .bottom_right_area{
+    display: none;
+  }
+
+  .vertical_right_area{
+  display: none;
+  }
+
+  .top_left_area{
+    display: none;
+  }
+
+  .bottom_left_area{
+  display: none;
+  }
+
+  .vertical_left_area{
+  display: none;
+  }
+
+
+  /* dragables */
+  .dragable_1, .dragable_2, .dragable_3, .dragable_4, .dragable_5,
+  .dragable_6, .dragable_7, .dragable_8, .dragable_9, .dragable_10{
+    height: 60px;
+  }
+
+
+}
