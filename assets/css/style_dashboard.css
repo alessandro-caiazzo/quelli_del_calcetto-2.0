@@ -191,14 +191,6 @@ font-family: 'Zen Dots', cursive;
 
 
 
-.central_match_diplay h3{
-  margin-bottom: 50px;
-  margin-top: 15px;
-  border-bottom:  #595959 1px solid;
-  color: #d6d6d6;
-  text-align: center;
-}
-
 .central_match_diplay span p{
   list-style: none;
   display: flex;
@@ -219,6 +211,14 @@ font-family: 'Zen Dots', cursive;
   overflow-y: scroll;
   box-shadow: inset 0px -20px 8px 0px #111111;
   background: linear-gradient(138deg, rgba(48,48,48,1) 0%, rgba(21,21,21,1) 36%) !important;
+}
+
+.central_match_display h3{
+  margin-bottom: 50px;
+  margin-top: 15px;
+  border-bottom:  #595959 1px solid;
+  color: #d6d6d6;
+  text-align: center;
 }
 
 
