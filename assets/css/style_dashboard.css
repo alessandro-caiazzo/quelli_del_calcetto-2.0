@@ -38,15 +38,7 @@ font-family: 'Zen Dots', cursive;
   background: #404040;
 }
 
-
-
-
-
-
-
 /*  navigation bar */
-
-
 
 
 #nav-container{
@@ -103,6 +95,10 @@ font-family: 'Zen Dots', cursive;
   font-size: 20px;
   color: orange;
   text-decoration: underline;
+}
+
+#carouselExampleFade{
+  display: none;
 }
 
 
@@ -180,13 +176,15 @@ font-family: 'Zen Dots', cursive;
   border-radius: 8px;
   background-image: url(../../assets/img/banner_central_big.png);
   background-size: cover;
-  background-position: center !important;
-  height: 200px;
+  background-position: center;
+  height: 228px;
 }
 
 /
 
 /* central risultati */
+
+
 
 
 
@@ -200,7 +198,7 @@ font-family: 'Zen Dots', cursive;
   font-size: 15px;
 }
 
-.central_match_diplay{
+.central_match_display{
   width: auto;
   background-color: #151515;
   color: #d6d6d6;
@@ -210,15 +208,15 @@ font-family: 'Zen Dots', cursive;
   text-align: center;
   overflow-y: scroll;
   box-shadow: inset 0px -20px 8px 0px #111111;
-  background: linear-gradient(138deg, rgba(48,48,48,1) 0%, rgba(21,21,21,1) 36%) !important;
+  background: linear-gradient(138deg, rgba(48,48,48,1) 0%, rgba(21,21,21,1) 36%);
 }
 
 .central_match_display h3{
   margin-bottom: 50px;
   margin-top: 15px;
-  border-bottom:  #595959 1px solid;
   color: #d6d6d6;
   text-align: center;
+  border-bottom:  #595959 1px solid;
 }
 
 
@@ -433,7 +431,7 @@ font-family: 'Zen Dots', cursive;
 
 
 
-/* //////////////////////////////      media querys///////// */
+/* ///////////////////////      media querys     //////////////////// */
 
 
 
@@ -464,6 +462,10 @@ font-family: 'Zen Dots', cursive;
     display: none ;
   }
 
+  #carouselExampleFade{
+    display: block;
+  }
+
   .main_container_top{
     display: flex;
     flex-direction: column-reverse;
@@ -488,29 +490,29 @@ font-family: 'Zen Dots', cursive;
     background-repeat: no-repeat;
   }
 
-  .central_match_diplay{
+  .central_match_display{
     color: #d6d6d6;
     margin-top: 25px ;
     overflow-x: hidden;
   }
 
-  .central_match_diplay h3{
+  .central_match_display h3{
     margin: 10px 5px 25px 5px ;
     border-bottom:  #595959 1px solid;
   }
 
-  .central_match_diplay p{
+  .central_match_display p{
     font-size: 13px ;
   }
- .central_match_diplay p:nth-child(2){
+ .central_match_display p:nth-child(2){
    margin-left: -20px;
  }
 
- .central_match_diplay p:nth-child(3){
+ .central_match_display p:nth-child(3){
    color: darkorange;
  }
 
-.central_match_diplay p:nth-child(4){
+.central_match_display p:nth-child(4){
 margin-right:  -20px;
 }
 
@@ -561,9 +563,6 @@ margin-right:  -20px;
 }
 
 
-
-
-
   .left_side_container{
     display: flex;
     justify-content: center;
@@ -582,7 +581,6 @@ margin-right:  -20px;
 
   .footer{
     display: flex;
-
   }
 
   .col_wrap{
