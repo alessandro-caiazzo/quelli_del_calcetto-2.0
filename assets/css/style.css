@@ -223,9 +223,10 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 @media all and (max-width: 768px) {
 
   body{
-    background-image: none;
-    background: rgb(0,0,0);
-    background: linear-gradient(58deg, rgba(0,0,0,1) 0%, rgba(21,21,21,1) 58%, rgba(64,64,64,1) 100%);
+    background-image: url(../../assets/img/index_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   #nav-container{
@@ -284,6 +285,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
    text-align: center;
    margin: auto 25px 0 190px;
    font-size: 13px;
+   color: darkorange;
   }
 
   .footer, .social{
